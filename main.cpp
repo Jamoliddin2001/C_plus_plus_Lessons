@@ -4,7 +4,7 @@
 
 bool isPrime(int x)
 {
-    for (int i = 2; i < sqrt(x); ++i) {
+    for (int i = 2; i <= sqrt(x); ++i) {
         if (x % i == 0) return false;
     }
     return true;
@@ -12,5 +12,5 @@ bool isPrime(int x)
 
 int main()
 {
-
+    std::cout<<isPrime(123);
 }
