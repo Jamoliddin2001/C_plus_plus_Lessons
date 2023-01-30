@@ -1,6 +1,19 @@
 #include <iostream>
-#include <algorithm>
 #include <cmath>
+
+
+int gcd(int a, int b)
+{
+    int temp;
+    while (b > 0)
+    {
+        temp = a % b;
+        a = b;
+        b = temp;
+    }
+
+    return a;
+}
 
 bool isPrime(int x)
 {
@@ -11,5 +24,6 @@ bool isPrime(int x)
 
 int main()
 {
-    std::cout<<isPrime(123);
+    std::cout<<isPrime(123)<<"\n";
+    std::cout<<gcd(7,54)<<"\n";
 }
