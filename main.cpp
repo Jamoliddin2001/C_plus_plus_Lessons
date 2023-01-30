@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cmath>
 
-
 bool isPrime(int x)
 {
     for (int i = 2; i <= sqrt(x); ++i)
@@ -9,6 +8,7 @@ bool isPrime(int x)
     return true;
 }
 
+int main();
 int main()
 {
     std::cout<<isPrime(123);
