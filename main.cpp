@@ -8,7 +8,6 @@ bool isPrime(int x)
     return true;
 }
 
-int main();
 int main()
 {
     std::cout<<isPrime(123);
