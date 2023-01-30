@@ -4,6 +4,12 @@
 
 int gcd(int a, int b)
 {
+    if (b <= 0) return a;
+    gcd(b, a % b);
+}
+
+/*int gcd(int a, int b)
+{
     int temp;
     while (b > 0)
     {
@@ -13,7 +19,7 @@ int gcd(int a, int b)
     }
 
     return a;
-}
+}*/
 
 bool isPrime(int x)
 {
@@ -25,5 +31,5 @@ bool isPrime(int x)
 int main()
 {
     std::cout<<isPrime(123)<<"\n";
-    std::cout<<gcd(7,54)<<"\n";
+    std::cout<<gcd(2023,2024)<<"\n";
 }
