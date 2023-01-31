@@ -8,6 +8,8 @@ int gcd(int a, int b)
     gcd(b, a % b);
 }
 
+
+
 /*int gcd(int a, int b)
 {
     int temp;
