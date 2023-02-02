@@ -10,7 +10,7 @@ int gcd(int a, int b)
 
 
 
-/*int gcd(int a, int b)
+int gcd(int a, int b)
 {
     int temp;
     while (b > 0)
@@ -21,7 +21,7 @@ int gcd(int a, int b)
     }
 
     return a;
-}*/
+}
 
 bool isPrime(int x)
 {
