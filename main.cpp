@@ -14,6 +14,12 @@ long long factorial(long long n)
     else return n * factorial(n - 1);
 }
 
+unsigned int factorial(unsigned int n)
+{
+    if (n == 1) return 1;
+    else return n * factorial(n - 1);
+}
+
 bool isPrime(int x)
 {
     for (int i = 2; i <= sqrt(x); ++i)
@@ -25,5 +31,5 @@ int main()
 {
     std::cout<<isPrime(123)<<"\n";
     std::cout<<gcd(2023,2024)<<"\n";
-    std::cout<<factorial(6)<<"\n";
+    std::cout<<factorial(n)<<"\n";
 }
